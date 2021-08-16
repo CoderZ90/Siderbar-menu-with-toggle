@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+/* Lets store colors in container */
+:root {
+  --color1: #fa517e;
+  --color2: #f200ff;
+  --color3: #0cff96;
+  --color4: #ff510c;
+  --color5: #ffba0c;
+  --color6: #ff0cff;
+  --color7: #00ffdd;
+  --color8: #00ff9d;
+}
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f4f6;
+}
+.navbar {
+  width: 60px;
+  height: 100%;
+  background: #222;
+  position: fixed;
+  overflow: hidden;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.navbar:hover {
+  width: 300px;
+}
+.navbar ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar ul li {
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+}
+.navbar ul li a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.navbar ul li a .icon {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+}
+.navbar ul li a .title {
+  position: relative;
+  line-height: 70px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: "Krona One";
+}
+.navbar ul li:hover {
+  background: #292929;
+}
+
+/* ADDING COLORS TO ICONS */
+ul li:nth-child(1) a .icon {
+  color: var(--color1);
+}
+ul li:nth-child(2) a .icon {
+  color: var(--color2);
+}
+ul li:nth-child(3) a .icon {
+  color: var(--color3);
+}
+ul li:nth-child(4) a .icon {
+  color: var(--color4);
+}
+ul li:nth-child(5) a .icon {
+  color: var(--color5);
+}
+ul li:nth-child(6) a .icon {
+  color: var(--color6);
+}
+ul li:nth-child(7) a .icon {
+  color: var(--color7);
+}
+ul li:nth-child(8) a .icon {
+  color: var(--color8);
+}
+
+/* Menu CSS Code  :) */
+.menu {
+  background: #111;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menuicon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar.menu-active {
+  width: 300px;
+}

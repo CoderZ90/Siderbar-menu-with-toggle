@@ -1,0 +1,11 @@
+color: #fa517e;
+color: #f200ff;
+color: #0cff96;
+color: #ff510c;
+color: #ffba0c;
+color: #ff0cff;
+color: #00ffdd;
+color: #00ff9d;
+
+hover bg
+#292929
